@@ -1,6 +1,6 @@
 <div class="main-header">
   <div class="groupname">
-    kanakoschat
+    <%= @room.name %>
   </div>
 
   <div class="end-chat">
@@ -9,7 +9,7 @@
 </div>
 
 <div class="messages">
-  <%= render partial: 'message', collection: @messages %>
+  <%= render partial: 'message', collection: @messages %> 
 </div>
 
 <%= form_with model: [@room, @message], class: 'form', local: true do |f| %>
