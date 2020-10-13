@@ -120,27 +120,17 @@
   display: flex;
 }
 
-.contact-form {
+.form-input {
   background-color: white;
-  width: 100%;
   display: flex;
+  width: 100%;
 }
 
-.text-form {
+.form-message {
   padding-left: 10px;
   height: 50px;
   border: none;
   width: 100%;
-}
-
-.send {
-  margin-left: 15px;
-  padding: 0 20px;
-  background-color: #38AEF0;
-  font-size: 16px;
-  color: white;
-  height: 50px;
-  border: none
 }
 
 .form-image {
@@ -151,6 +141,16 @@
   width: 60px;
   margin: 5px 10px;
   text-align: center;
+}
+
+.form-submit {
+  margin-left: 15px;
+  padding: 0 20px;
+  background-color: #38AEF0;
+  font-size: 16px;
+  color: white;
+  height: 50px;
+  border: none
 }
 
 .hidden {
