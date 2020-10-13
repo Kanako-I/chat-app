@@ -9,17 +9,7 @@
 </div>
 
 <div class="messages">
-  <div class="message1">
-    <div class="message-name">kanako</div>
-    <div class="message-date">2020/10/12(Mon) 12:00:00</div>
-  </div>
-  <div class="message-text">おはよう</div>
-
-  <div class="message2">
-    <div class="message-name">tom</div>
-    <div class="message-date">2020/10/12(Mon) 12:01:00</div>
-  </div>
-  <div class="message-text">おはよう!</div>
+  <%= render partial: 'message', collection: @messages %>
 </div>
 
 <%= form_with model: [@room, @message], class: 'form', local: true do |f| %>
@@ -32,3 +22,4 @@
   </div>
   <%= f.submit '送信', class: 'form-submit' %>
 <% end %>
+
